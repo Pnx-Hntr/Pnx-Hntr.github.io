@@ -218,3 +218,10 @@ button:hover{
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
 	visibility: hidden;
 }
+
+@media (max-width: 768px){
+	body{
+		max-height: 100vh;
+		max-width: 100vw;
+	}
+}
