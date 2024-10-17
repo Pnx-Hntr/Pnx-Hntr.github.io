@@ -216,7 +216,6 @@ button:hover{
 	left: 92%;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
-	visibility: hidden;
 }
 
 @media (max-width: 768px){
