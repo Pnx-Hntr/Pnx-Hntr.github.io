@@ -6,6 +6,8 @@
     height: 20vh;min-height: 80px;
     width: 20vh;min-width: 80px;
     top: 15vh;
+    animation: mdown 3s forwards;
+    opacity: 0.5;
 }
 #backpetal{
     display: flex;
@@ -126,14 +128,25 @@
     animation: petals 3.4s;
     
 }
-
+@keyframes mdown{
+    0%{
+transform: translateY(20vh);
+opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(38vh);
+    }
+}
 
 @keyframes petals {
     0%{
         opacity: 0;
     }
-    40%{
-        opacity: 0;
+    20%{
+        opacity: 1;
     }
     70%{
         opacity: 1;

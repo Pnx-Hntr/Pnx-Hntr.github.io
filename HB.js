@@ -1,13 +1,15 @@
 const page1 = "Today is a very special day for you..";
+const page2 = "More text here.. blA bla bla bla blaaaa <br> aa aa  aaaaaa aaaaaaaa aaaa";
 var cdate = new Date();
 var bdate = new Date(); bdate.setDate(18); bdate.setHours(23); bdate.setMinutes(59);
 var dDiff=bdate.getDate()-cdate.getDate();
 var hDiff=bdate.getHours()-cdate.getHours();
 var mDiff=bdate.getMinutes()-cdate.getMinutes();
-var next1;
+var next1,i=0;
 window.onload = function(){
     var next1;
-    timecheck()
+    timecheck();
+    writeAnimate();
 }
 function timecheck() {
     if(cdate.getDate()<bdate.getDate()){
@@ -21,12 +23,18 @@ function timecheck() {
         next1=fasle;
     }
 }
+function writeAnimate(){
+    if(i<page2.length){
+        document.getElementById("disp2").innerHTML += page2.charAt(i);
+    i++;
+    setTimeout(writeAnimate,70);
+    }
+}
 function Next1() {
     if(next1){
         alert("Wait for that special day please");
         return;
     }
-    // Delay the animation by 3 seconds
     setTimeout(function() {
         // Select the petals and back petals
         let flowers = document.querySelectorAll('#flower');
