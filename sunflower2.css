@@ -25,7 +25,6 @@
     height: 10vh;min-height: 80px;
     width: 10vh;min-width: 80px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
-    animation: petals 1s;
 }
 .petals{
     display: flex;

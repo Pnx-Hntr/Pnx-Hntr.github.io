@@ -1,6 +1,6 @@
 const page1 = "Today is a very special day for you..";
 var cdate = new Date();
-var bdate = new Date(); bdate.setDate(28); bdate.setHours(23); bdate.setMinutes(59);
+var bdate = new Date(); bdate.setDate(18); bdate.setHours(23); bdate.setMinutes(59);
 var dDiff=bdate.getDate()-cdate.getDate();
 var hDiff=bdate.getHours()-cdate.getHours();
 var mDiff=bdate.getMinutes()-cdate.getMinutes();
