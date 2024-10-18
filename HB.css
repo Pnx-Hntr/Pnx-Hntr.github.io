@@ -237,19 +237,19 @@ button:hover{
 	color: white;
 	position: sticky;
 	text-align: center;
-	top: 94%;
-	left: 92%;
+	top: 92%;
+	left: 90%;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
 }
 
 @media (max-width: 768px){
 	body{
-		max-height: 94vh;
-		max-width: 100vw;
+		max-height: 98%;
+		max-width: 100%;
 		margin: 0;
 		overflow-x: hidden;
-		overflow-y: hidden;
+		overflow-y: auto;
 	}
 	.t2{
 		max-width:75vw ;
