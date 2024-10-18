@@ -237,8 +237,8 @@ button:hover{
 	color: white;
 	position: sticky;
 	text-align: center;
-	top: 92%;
-	left: 90%;
+	top: 90%;
+	left: 84%;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
 }
