@@ -3,13 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
-html{
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
 body{
     display: flex;
-    height: 98vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 	background: linear-gradient(360deg, rgba(235,201,255,1) 24%, rgba(214,0,245,0.5011600928074246) 85%);
@@ -238,21 +234,23 @@ button:hover{
 	position: sticky;
 	text-align: center;
 	top: 90%;
-	left: 84%;
+	left: 90%;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
 }
 
 @media (max-width: 768px){
 	body{
-		max-height: 97vh;
-		max-width: 100vw;
+		max-height: 100lvh;
+		max-width: 100lvw;
 		margin: 0;
-		overflow-x: hidden;
-		overflow-y: auto;
 	}
 	.t2{
 		max-width:75vw ;
 		margin: 2vh;
+	}
+	.watermark{
+		top: 94lvh;
+	left: 80lvw;
 	}
 }

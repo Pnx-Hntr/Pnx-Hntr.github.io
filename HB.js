@@ -54,3 +54,11 @@ function Next1() {
         }, 500); // Change to match the duration of your fadeOut animation
     }, 100); // Initial delay before starting animations
 }
+function back() {
+    console.log("Backed");
+setTimeout(function() {
+    window.location.reload();
+}, 4000);
+ history.back(); 
+ 
+}
