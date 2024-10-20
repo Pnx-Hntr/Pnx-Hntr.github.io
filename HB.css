@@ -241,7 +241,7 @@ button:hover{
 
 @media (max-width: 768px){
 	body{
-		max-height: 100lvh;
+		max-height: 92lvh;
 		max-width: 100lvw;
 		margin: 0;
 	}
@@ -250,7 +250,7 @@ button:hover{
 		margin: 2vh;
 	}
 	.watermark{
-		top: 94lvh;
+		top: 90lvh;
 	left: 80lvw;
 	}
 }
