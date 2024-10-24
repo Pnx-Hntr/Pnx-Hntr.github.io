@@ -7,7 +7,7 @@
     width: 20vh;min-width: 80px;
     top: 15vh;
     animation: mdown 3s forwards;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 #backpetal{
     display: flex;
@@ -22,7 +22,7 @@
     align-items: center;
     position: relative;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(0,0,0,1) 15%, rgba(47,39,1,1) 66%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 21%, rgba(45,32,1,1) 44%, rgba(18,15,0,1) 77%);
     background-color: rgb(51, 31, 2);
     height: 10vh;min-height: 80px;
     width: 10vh;min-width: 80px;
