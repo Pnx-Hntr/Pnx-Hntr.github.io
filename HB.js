@@ -27,7 +27,7 @@ function writeAnimate(){
     if(i<page2.length){
         document.getElementById("disp2").innerHTML += page2.charAt(i);
     i++;
-    setTimeout(writeAnimate,70);
+    setTimeout(writeAnimate,60);
     }
 }
 function Next1() {
@@ -56,9 +56,14 @@ function Next1() {
 }
 function back() {
     console.log("Backed");
-setTimeout(function() {
-    window.location.reload();
-}, 4000);
+    let flowers = document.querySelectorAll('#flower');
+    flowers.forEach(flower => {
+        flower.classList.remove("fadeOut");
+    });
+    let glass = document.querySelector('.glass');
+    if (glass) {
+        glass.classList.remove("fadeOut"); 
+    }
  history.back(); 
  
 }
