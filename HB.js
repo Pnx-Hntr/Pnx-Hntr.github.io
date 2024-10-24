@@ -68,8 +68,16 @@ function Next2(){
     flow.classList.add("FlowerUp");
     gls.classList.add("fadeDown");
     img.classList.add("fadeDown");
+    HappyBirthday();
     
 }
+}
+function HappyBirthday(){
+    let happybirthday=document.querySelector('.MainWish'),
+    caption=document.querySelector('.caption'),btton=document.querySelector('#next3');
+    happybirthday.classList.add("HBtext");
+    setTimeout(function(){btton.classList.add("HBtext");
+                caption.classList.add("HBtext");console.log("test");},800)
 }
 function writeAnimate2(){
     if(j<page2_1.length){

@@ -38,7 +38,7 @@ body{
     gap: 9vw;
 	bottom: 1vh;
 }
-.bttn button{
+button{
     font-size: medium;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
     padding: 15px 50px;
@@ -50,7 +50,9 @@ body{
     border: solid 1px rgba(245, 245, 245, 0.7);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     color: white;
-    animation: fadeIn 4s ease forwards;
+}
+.bttn button{
+	animation: fadeIn 4s ease forwards;
 }
 button:hover{
     background-color: rgba(255, 255, 255, 0.2);
@@ -85,13 +87,14 @@ button:hover{
 	height: 30vh;min-height: 200px;
 	width: 20vw;min-width: 150px;
 	top: 10vh;
-	border-radius: 10px;
+	border-radius: 13px;
 	box-shadow: 2px 2px 5px black;
 	animation: fadeInG 4s ease forwards;
 	z-index: 0;
 }
 @keyframes fadeIn {
     20%{
+		visibility: visible;
         opacity: 0;
         transform: translateY(200%);
     }
@@ -173,9 +176,31 @@ button:disabled{
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 		text-align: center;
 		font-family:cursive;
-		padding-bottom: 15vh;
+		padding-bottom: 18vh;
+		padding-left: 10vw;
+		visibility: hidden;
 	}
-	
+	.WishPart button{
+		position: absolute;
+		bottom: 18vh;
+		background-color: rgba(105, 105, 105, 0.3);
+	}
+	.WishPart p{
+		position: absolute;
+		font-size: large;
+		bottom: 27vh;
+		text-shadow: 0 0 8px black;
+	}
+	.HBtext{
+		visibility: visible;
+   animation: HBin 5s forwards;
+	}
+	@keyframes HBin {
+		0%{ opacity: 0;}
+		40%{opacity: 0;}
+		100%{opacity: 1;}
+		
+	}
 @media (max-width: 768px){
 	body{
 		max-height: 99lvh;

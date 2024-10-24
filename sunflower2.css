@@ -159,9 +159,9 @@ opacity: 0;
 }
 @keyframes Up {
     0%{transform: translateY(36vh);}
-    45%{transform: translateY(15vh); opacity:0.9; height: 25vh;
-        width: 25vh;}
-        55%{transform: translateY(15vh); opacity:0.9; height: 25vh;
-            width: 25vh;}
-        100%{opacity: 0;}
+    45%{transform: translateY(15vh); opacity:0.9;
+        }
+        55%{transform: translateY(15vh); opacity:0.9;
+            }
+        100%{opacity: 0; zoom: 100%;}
 }
