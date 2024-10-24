@@ -6,14 +6,11 @@ var bdate = new Date(); bdate.setDate(18); bdate.setHours(23); bdate.setMinutes(
 var dDiff=bdate.getDate()-cdate.getDate();
 var hDiff=bdate.getHours()-cdate.getHours();
 var mDiff=bdate.getMinutes()-cdate.getMinutes();
-let animationTimeout; // Variable to store the timeout
-let animationRunning = false; // Track if an animation is already running
 var next1,flagNext2=true;
 let i=0,j=0;
 window.onload = function(){
     var next1;
     timecheck();
-    writeAnimate();
 }
 function timecheck() {
     if(cdate.getDate()<bdate.getDate()){
@@ -86,4 +83,9 @@ function back() {
     }
  history.back(); 
  
+}
+function onLoad(){
+    var b2 = document.getElementById("next2");
+    setTimeout(writeAnimate,2500) ;
+    setTimeout(function(){b2.disabled = false;}, 9000);
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="HB.js"></script>
-</script>
+    
     <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HB</title>
         <link rel="stylesheet" href="HB.css">
         <link rel="stylesheet" href="sunflower2.css">
         <link rel="stylesheet" href="particle.css">
     </head>
-    <body onload=setTimeout(writeAnimate,2500)>
-        <img class="image1" src="https://gratisography.com/wp-content/uploads/2024/03/gratisography-funflower-800x525.jpg">
+    <script src="HB.js"></script></script>
+    <body onload=onLoad()>
+        <img class="image1" src="img.jpg">
         <div id="flower">
           <div id="sunflower">
             <div class="petals"></div>
@@ -43,7 +43,7 @@
                 <br>
                 <div class="bttn">
                 <button onclick=back()>Back</button>
-                <button onclick=Next2() id="next2">Next</button>
+                <button onclick=Next2() id="next2" disabled>Next</button>
                 </div>
             </div>
         </div>

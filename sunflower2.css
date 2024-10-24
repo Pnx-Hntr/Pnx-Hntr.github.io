@@ -8,6 +8,7 @@
     top: 15vh;
     animation: mdown 3s forwards;
     opacity: 0.6;
+    z-index: -1;
 }
 #backpetal{
     display: flex;
