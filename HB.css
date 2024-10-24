@@ -19,8 +19,8 @@ body{
     height: 35vh;min-height: 200px;
     width: 55vw;min-width: 350px;max-width: 900px;
     margin-top: 30vh;
-	margin-left: 1vh;
-	margin-right: 1vh;
+	margin-left: 2vh;
+	margin-right: 2vh;
     backdrop-filter: blur(3px);
     box-shadow: 0 0 130px rgba(0, 0, 0, 0.4);
     border: 3px solid rgba(255, 255, 255, 0.3);
@@ -79,10 +79,12 @@ button:hover{
     font-family:cursive;
 }
 .image1{
+	position: absolute;
 	display: block;
 	margin: 0 auto;
 	height: 30vh;
-	width: 45vh;
+	width: 45vw;
+	top: 10vh;
 	animation: fadeInG 4s ease forwards;
 }
 @keyframes fadeIn {
@@ -111,7 +113,7 @@ button:hover{
 }
 
 .fadeOut{
-	animation: fadeout 1s forwards ease-in;
+	animation: fadeout 1s ease-in;
 }
 @keyframes fadeout{
 	0%{
