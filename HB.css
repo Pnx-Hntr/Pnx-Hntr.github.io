@@ -116,9 +116,26 @@ button:hover{
 }
 
 .fadeOut{
-	animation: fadeout 1s ease-in;
+	animation: fadeout 1s ease-in !important;
 }
 @keyframes fadeout{
+	0%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	50%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(15px);
+	}
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}.fadeDown{
+	animation: fadedown 0.5s ease-in forwards !important;
+}
+@keyframes fadedown{
 	0%{
 		opacity: 1;
 		transform: translateY(0px);
@@ -142,7 +159,23 @@ button:hover{
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
+button:disabled{
 
+	color: rgba(128, 128, 128, 0.164);
+	background-color: rgba(128, 128, 128, 0.137);
+	border: rgba(128, 128, 128, 0.521);
+	}
+	.WishPart{
+		display: flex;
+		justify-content: center;
+		color: white;
+		font-size:130px;
+		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+		text-align: center;
+		font-family:cursive;
+		padding-bottom: 15vh;
+	}
+	
 @media (max-width: 768px){
 	body{
 		max-height: 99lvh;
@@ -157,8 +190,7 @@ button:hover{
 		top: 90lvh;
 	left: 80lvw;
 	}
-}
-
-button:decrement{
-
+	.WishPart{
+		font-size: 20vw;
+	}
 }

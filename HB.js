@@ -59,9 +59,16 @@ function Next2(){
  if(flagNext2){
     document.getElementById("disp2").innerHTML = "";
     writeAnimate2();
+    flagNext2=false;
  }else
 {
- flagNext2=false;
+    let flow = document.querySelector('#flower'),gls = document.querySelector('.glass')
+    img = document.querySelector('.image1'); 
+    flow.style.animation = '';
+    flow.classList.add("FlowerUp");
+    gls.classList.add("fadeDown");
+    img.classList.add("fadeDown");
+    
 }
 }
 function writeAnimate2(){
@@ -72,20 +79,19 @@ function writeAnimate2(){
     }
 }
 function back() {
-    console.log("Backed");
-    let flowers = document.querySelectorAll('#flower');
+   /* let flowers = document.querySelectorAll('#flower');
     flowers.forEach(flower => {
         flower.classList.remove("fadeOut");
     });
     let glass = document.querySelector('.glass');
     if (glass) {
         glass.classList.remove("fadeOut"); 
-    }
- history.back(); 
- 
+    }*/
+ //history.back(); 
+ window.location.href="HB.html";
 }
 function onLoad(){
     var b2 = document.getElementById("next2");
     setTimeout(writeAnimate,2500) ;
-    setTimeout(function(){b2.disabled = false;}, 9000);
+    setTimeout(function(){b2.disabled = false;}, 700);
 }
