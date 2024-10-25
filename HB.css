@@ -85,8 +85,8 @@ button:hover{
 	position: absolute;
 	display: block;
 	margin: 0 auto;
-	height: 30vh;min-height: 200px;
-	width: 20vw;min-width: 150px;
+	height: 30vh;min-height: 230px;max-height: 300px;
+	width: 20vw;min-width: 150px;max-width: 200px;
 	top: 10vh;
 	border-radius: 13px;
 	box-shadow: 2px 2px 5px black;
