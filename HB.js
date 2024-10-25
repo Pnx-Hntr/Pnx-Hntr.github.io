@@ -81,6 +81,7 @@ function Next3(){
     }, 1000);
 }
 function submit(){
+    sendData();
     let food = document.querySelector('.treat'),
         foodt=document.querySelector('.treatbox'),
         submit=document.querySelector('#submit'),
@@ -126,3 +127,23 @@ function onLoad(){
     setTimeout(writeAnimate,2500) ;
     setTimeout(function(){b2.disabled = false;}, 9700);
 }
+
+
+function sendData() {
+    const data = document.getElementById("Food").value;
+    const date = new Date().toLocaleString();
+
+    fetch("https://server-2n5h.onrender.com", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ data, date })
+    })
+    .then(response => response.text())
+    .then(result => {
+        document.getElementById("responseMessage").textContent = result;
+        console.log(result);
+    })
+    .catch(error => console.error("Error:", error));
+};
