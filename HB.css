@@ -6,6 +6,7 @@
 body{
     display: flex;
     height: 100vh;
+	width: 100vw;
     align-items: center;
     justify-content: center;
 	background: linear-gradient(360deg, rgba(235,201,255,1) 24%, rgba(214,0,245,0.5011600928074246) 85%);
@@ -55,7 +56,7 @@ button{
 	animation: fadeIn 4s ease forwards;
 }
 button:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.349);
 }
 .p1t1{
     display: flex;
@@ -155,10 +156,10 @@ button:hover{
 }
 .watermark{
 	color: white;
-	position: sticky;
+	position: absolute;
 	text-align: center;
-	top: 90%;
-	left: 90%;
+	top: 90vh;
+	left: 90vw;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
@@ -177,8 +178,8 @@ button:disabled{
 		text-align: center;
 		font-family:cursive;
 		padding-bottom: 18vh;
-		padding-left: 10vw;
 		visibility: hidden;
+		
 	}
 	.WishPart button{
 		position: absolute;
@@ -190,6 +191,10 @@ button:disabled{
 		font-size: large;
 		bottom: 27vh;
 		text-shadow: 0 0 8px black;
+		
+	}
+	.WishPart .MainWish .Tani{
+		font-size: 50px !important;
 	}
 	.HBtext{
 		visibility: visible;
@@ -203,9 +208,11 @@ button:disabled{
 	}
 @media (max-width: 768px){
 	body{
-		max-height: 99lvh;
-		max-width: 100lvw;
+		max-height: 100dvh;
+		max-width: 100dvw;
 		margin: 0;
+		overflow-x: hidden;
+	    overflow-y: hidden;
 	}
 	.t2{
 		max-width:75vw ;

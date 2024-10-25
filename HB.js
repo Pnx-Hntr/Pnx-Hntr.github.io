@@ -72,6 +72,16 @@ function Next2(){
     
 }
 }
+function Next3(){
+    let bir = document.querySelector('.MainWish'); 
+    bir.classList.add("fadeDown");
+    console.log("HB");
+    setTimeout(() => {
+        window.location.href = "HB3.html"; 
+    }, 1000);
+}
+
+
 function HappyBirthday(){
     let happybirthday=document.querySelector('.MainWish'),
     caption=document.querySelector('.caption'),btton=document.querySelector('#next3');
