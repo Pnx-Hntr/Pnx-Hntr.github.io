@@ -176,7 +176,7 @@ button:disabled{
 		font-size:130px;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 		text-align: center;
-		font-family:cursive;
+		font-family:"DynaPuff",serif;
 		padding-bottom: 18vh;
 		visibility: hidden;
 		
@@ -206,6 +206,7 @@ button:disabled{
 		100%{opacity: 1;}
 		
 	}
+	
 @media (max-width: 768px){
 	body{
 		max-height: 100dvh;

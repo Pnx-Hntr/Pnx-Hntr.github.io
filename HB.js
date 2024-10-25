@@ -80,6 +80,19 @@ function Next3(){
         window.location.href = "HB3.html"; 
     }, 1000);
 }
+function submit(){
+    let food = document.querySelector('.treat'),
+        foodt=document.querySelector('.treatbox'),
+        submit=document.querySelector('#submit'),
+        circOut=document.querySelector('.circleOut'),
+        final=document.querySelector('.final'); 
+    food.classList.add("fadeDown");
+    foodt.classList.add("fadeDown");
+    submit.classList.add("SubmAni");
+    setTimeout(function(){circOut.classList.add("CircOut");},3400)
+    final.classList.add("finalFadein");
+    
+}
 
 
 function HappyBirthday(){

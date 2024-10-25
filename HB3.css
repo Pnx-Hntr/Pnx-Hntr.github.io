@@ -8,8 +8,10 @@ body{
     background-color: rgb(235, 201, 255);
 	overflow-x: hidden;
 	overflow-y: hidden;
+    position: relative;
 }
 .treat{
+    padding-top: 15vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -48,4 +50,52 @@ border-radius: 0 !important;
     display: block;
     margin: 0 auto;
 }
-
+.homenext{position: relative;}
+.SubmAni{
+    animation: Subm 4s forwards ease-out;
+}
+@keyframes Subm {
+    0%{transform: translateY(0); }
+    80%{}
+    85%{ transform: translateY(-30vh); padding: 15px 50px; font-size:initial;}
+    95%{opacity: 1;}
+    100%{ transform: translateY(-30vh);padding: 0px 0px ;opacity: 0;
+            font-size: 1px;}
+}
+.circleOut{
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    border: solid 3px rgba(255, 255, 255, 0.397);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.397);
+    z-index: -1;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+.CircOut{animation: circOut 2s forwards;visibility: visible;}
+@keyframes circOut {
+    50%{}
+    80%{height: 220vh;width: 220vh;opacity: 1;}
+    100%{opacity: 0;height: 220vh;width: 220vh;}
+}
+.final{
+    visibility: hidden;
+    position: relative;
+    margin: 0 auto;
+    bottom: 30vh;
+}
+.final p{
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    text-align: center;
+    font-family:cursive;
+    padding-bottom: 5vh;
+}
+.finalFadein{
+    animation: finalFadein 3s 3s forwards;
+}
+@keyframes finalFadein {
+    0%{opacity: 0;visibility: visible;}
+    100%{opacity: 1;visibility: visible;transform: translateY(-5vh);}
+}
