@@ -1,8 +1,8 @@
 const page1 = "Today is a very special day for you..";
-const page2 = "We were talking about sunflowers once and I remember this was the first picture of you , that you sent to me.";
+const page2 = "We were talking about sunflowers once and I remember this was the first picture of you, that you sent to me.";
 const page2_1=" Your smile was the most precious thing in this picture, which i fell in love with . I hope you keep this beautiful smile for the rest of your life. ";
 var cdate = new Date();
-var bdate = new Date(); bdate.setDate(18); bdate.setHours(23); bdate.setMinutes(59);
+var bdate = new Date(); bdate.setDate(21); bdate.setHours(23); bdate.setMinutes(59);
 var dDiff=bdate.getDate()-cdate.getDate();
 var hDiff=bdate.getHours()-cdate.getHours();
 var mDiff=bdate.getMinutes()-cdate.getMinutes();
@@ -16,7 +16,7 @@ function timecheck() {
     if(cdate.getDate()<bdate.getDate()){
         next1=true;
         document.getElementById("disp").textContent="Its not yet time ,";
-        document.getElementById("countdown").textContent=(dDiff + " days " + hDiff +" hours "+mDiff+" mins left...");
+        document.getElementById("countdown").textContent=((dDiff-1) + " days " + hDiff +" hours "+mDiff+" mins left...");
         return;
     }
     else{
@@ -124,5 +124,5 @@ function back() {
 function onLoad(){
     var b2 = document.getElementById("next2");
     setTimeout(writeAnimate,2500) ;
-    setTimeout(function(){b2.disabled = false;}, 700);
+    setTimeout(function(){b2.disabled = false;}, 9700);
 }

@@ -65,7 +65,7 @@ button:hover{
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     font-size: larger;
     text-align: center;
-    font-family:cursive;
+    font-family: "Comic Neue", cursive;
 	margin-bottom: 1vh ;
     animation: fadeIn 4s ease forwards;
 	
@@ -79,7 +79,7 @@ button:hover{
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     font-size: larger;
     text-align: center;
-    font-family:cursive;
+    font-family: "Comic Neue", cursive;
 }
 .image1{
 	position: absolute;
@@ -159,7 +159,7 @@ button:hover{
 	position: absolute;
 	text-align: center;
 	top: 90vh;
-	left: 90vw;
+	left: 49vw;
 	backdrop-filter: blur(10px);
 	text-shadow: 0 0 5px rgba(0, 0, 0, 1);
 }
@@ -176,7 +176,7 @@ button:disabled{
 		font-size:130px;
 		text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 		text-align: center;
-		font-family:"DynaPuff",serif;
+		font-family: "DynaPuff", serif;
 		padding-bottom: 18vh;
 		visibility: hidden;
 		
@@ -200,6 +200,11 @@ button:disabled{
 		visibility: visible;
    animation: HBin 5s forwards;
 	}
+	.caption{
+		background-color: rgba(0, 0, 0, 0.267);
+		text-shadow: 0 0 2px black !important;
+		font-family:'Courier New', Courier, monospace;
+	}
 	@keyframes HBin {
 		0%{ opacity: 0;}
 		40%{opacity: 0;}
@@ -220,8 +225,8 @@ button:disabled{
 		margin: 2vh;
 	}
 	.watermark{
-		top: 90lvh;
-	left: 80lvw;
+		top: 87lvh;
+	left: 45vw;
 	}
 	.WishPart{
 		font-size: 20vw;
