@@ -133,7 +133,7 @@ function sendData() {
     const data = document.getElementById("Food").value;
     const date = new Date().toLocaleString();
 
-    fetch("https://server-2n5h.onrender.com", {
+    fetch("https://server-2n5h.onrender.com/save-data", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
