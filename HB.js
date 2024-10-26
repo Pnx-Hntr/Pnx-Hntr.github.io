@@ -142,7 +142,6 @@ function sendData() {
     })
     .then(response => response.text())
     .then(result => {
-        document.getElementById("responseMessage").textContent = result;
         console.log(result);
     })
     .catch(error => console.error("Error:", error));
