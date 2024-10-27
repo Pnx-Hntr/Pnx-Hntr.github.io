@@ -1,6 +1,6 @@
 const page1 = "Today is a very special day for you..";
 const page2 = "We were talking about sunflowers once and I remember this was the first picture of you, that you sent to me.";
-const page2_1=" Your smile was the most precious thing in this picture, which i fell in love with . I hope you keep this beautiful smile for the rest of your life. ";
+const page2_1="Your smile was the most precious thing in this picture, which i fell in love with . I hope this beautiful smile stays in your beautiful face forever .";
 var cdate = new Date();
 var bdate = new Date(); bdate.setDate(28); bdate.setHours(23); bdate.setMinutes(59);
 var dDiff=bdate.getDate()-cdate.getDate();
